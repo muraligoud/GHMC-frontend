@@ -78,7 +78,7 @@ const card = (
             }}
             id="standard-required"
             label="Plot No"
-            type="email"
+            type="text"
             autoComplete='off'
             variant="standard"
             size="small"
