@@ -31,7 +31,8 @@ const postDataToAPI = async(data)=>{
 };
 
 const onSubmit = (data)=>{
-      postDataToAPI(data).then(()=>history('/user'));
+  // TODO: change it
+      postDataToAPI(data).then(()=>history('/dashboard'));
 };
 // console.log(errors);
 

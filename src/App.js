@@ -7,6 +7,7 @@ import Adminlogin from './components/Adminlogin';
 import Driverlogin from './components/Driverlogin';
 import Houselogin from './components/Houselogin';
 import Welcomehouse from './components/Welcomehouse';
+import DashboardComponent from './components/dashboard';
 function App() {
   return (
     // <Houseform />
@@ -14,7 +15,8 @@ function App() {
     // <Adminform/>
     <Router>
       <Routes>  
-        <Route path='/'/>
+        <Route path='/' element={<Adminlogin/>}/>
+        <Route path='/dashboard' element={<DashboardComponent/>}/>
         {/* <Route path="/admin"> */}
         <Route path="/admin/register" element={<Adminform/>}/>
         <Route path="/admin/login" element={<Adminlogin/>}/>
